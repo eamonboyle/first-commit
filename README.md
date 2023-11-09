@@ -1,27 +1,19 @@
-# React + TypeScript + Vite
+# First Commit Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React application built with TypeScript and Vite. The application fetches and displays the first commit made by a GitHub user. It uses the GitHub API to fetch user and repository data.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   Fetches user data from the GitHub API
+-   Displays the first commit of a user
+-   Handles errors and edge cases (like users with no repositories or commits)
+-   Uses React Router for routing
+-   Persists the username in the URL for easy sharing
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+-   React: A JavaScript library for building user interfaces
+-   TypeScript: A typed superset of JavaScript that adds static types
+-   Vite: A build tool that aims to provide a faster and leaner development experience for modern web projects
+-   Axios: A promise-based HTTP client for the browser and Node.js
+-   React Router: A collection of navigational components that compose declaratively with your application
